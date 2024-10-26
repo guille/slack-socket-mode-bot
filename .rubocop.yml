@@ -9,4 +9,4 @@ Style/StringLiteralsInInterpolation:
 
 Naming/FileName:
   Exclude:
-    - 'lib/slack-socket-mode-bot.rb'
+    - 'lib/slack-ruby-socket-mode-bot.rb'

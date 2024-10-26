@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "slack-socket-mode-bot"
+require "slack-ruby-socket-mode-bot"
 
 logger = Logger.new($stdout)
 logger.level = :warn

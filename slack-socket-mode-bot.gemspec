@@ -3,7 +3,7 @@
 require_relative "lib/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "slack-socket-mode-bot"
+  spec.name = "slack-ruby-socket-mode-bot"
   spec.version = SlackSocketModeBot::VERSION
   spec.authors = ["guille"]
   spec.email = ["guille@users.noreply.github.com"]

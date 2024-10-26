@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    slack-socket-mode-bot (0.1.0)
+    slack-ruby-socket-mode-bot (0.1.0)
       async
       async-websocket
       slack-ruby-client
@@ -144,7 +144,7 @@ DEPENDENCIES
   rake
   rspec
   rubocop
-  slack-socket-mode-bot!
+  slack-ruby-socket-mode-bot!
 
 BUNDLED WITH
    2.5.19
