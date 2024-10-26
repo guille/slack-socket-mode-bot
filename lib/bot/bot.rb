@@ -3,6 +3,8 @@
 module SlackSocketModeBot
   MentionHandler = Data.define(:match_regex, :callback)
 
+  # Entry class for the gem, allows registering callbacks that will be triggered
+  # when the bot is mentioned
   class Bot
     def initialize(bot_token:, app_token:, logger: nil)
       @bot_token = bot_token

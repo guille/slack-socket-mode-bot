@@ -2,6 +2,10 @@
 
 module SlackSocketModeBot
   module Transport
+    # This class heavily leverages async and async-websocket to keep a connection alive to the
+    # URL provided by the client
+    # It will perform as expected for a Slack Socket Mode client: acknowledge all events and refresh when needed
+    # Moreover it will use the client's callback for processing events
     class WebSocket
       attr_reader :client
 
@@ -13,6 +17,7 @@ module SlackSocketModeBot
         @ping_id = 1
       end
 
+      # rubocop:disable Metrics
       def connect!
         Async do |task|
           trap_sigterm(task)
@@ -51,6 +56,7 @@ module SlackSocketModeBot
         @ping_task&.stop
         @socket_task&.stop
       end
+      # rubocop:enable Metrics
 
       private
 

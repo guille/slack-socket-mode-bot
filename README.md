@@ -1,5 +1,8 @@
 # slack-ruby-socket-mode-bot
 
+[![Gem Version](https://badge.fury.io/rb/slack-ruby-socket-mode-bot.svg)](https://badge.fury.io/rb/slack-ruby-socket-mode-bot)
+[![Tests](https://github.com/guille/slack-socket-mode-bot/actions/workflows/main.yml/badge.svg)](https://github.com/guille/slack-socket-mode-bot/actions/workflows/main.yml)
+
 This gem allows users to create Slack bots that respond to mentions. This gem only supports events-based [socket mode](https://api.slack.com/apis/socket-mode) bots. The gem allows registering a number of callbacks that will be executed if the registered regular expression matches the mention text.
 
 See the [examples](https://github.com/guille/slack-socket-mode-bot/blob/master/examples) directory for some ideas on how to use the gem.

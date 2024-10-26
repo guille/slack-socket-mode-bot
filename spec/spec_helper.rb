@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "slack/socket/mode/bot"
+require "slack-ruby-socket-mode-bot"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

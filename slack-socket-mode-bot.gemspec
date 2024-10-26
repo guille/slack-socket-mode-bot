@@ -9,7 +9,12 @@ Gem::Specification.new do |spec|
   spec.email = ["guille@users.noreply.github.com"]
 
   spec.summary = "Gem for implementing simple bots for Slack using Socket Mode"
-  spec.description = "This gem allows users to create Slack bots that respond to mentions. This gem only supports events-based socket mode bots. The gem allows registering a number of callbacks that will be executed if the registered regular expression matches the mention text."
+  spec.description = <<~DESC
+    This gem allows users to create Slack bots that respond to mentions.
+    This gem only supports events-based socket mode bots.
+    The gem allows registering a number of callbacks that will be executed
+    if the registered regular expression matches the mention text.
+  DESC
   spec.homepage = "https://github.com/guille/slack-socket-mode-bot"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.2.0"

@@ -2,6 +2,8 @@
 
 module SlackSocketModeBot
   module Transport
+    # Client responsible for instantiating a WebSocket,
+    # as well as providing a connection URL and a callback method
     class SocketModeClient
       def initialize(app_token:, callback:, logger: nil)
         @app_token = app_token
