@@ -1,0 +1,12 @@
+AllCops:
+  TargetRubyVersion: 3.3
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Naming/FileName:
+  Exclude:
+    - 'lib/slack-socket-mode-bot.rb'
