@@ -34,10 +34,7 @@ module SlackSocketModeBot
       private
 
       def slack_web_client
-        client = Slack::Web::Client.new(
-          token: @app_token,
-          logger: @logger
-        )
+        client = Slack::Web::Client.new(token: @app_token)
         @slack_web_client ||= client
       end
     end

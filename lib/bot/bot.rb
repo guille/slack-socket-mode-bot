@@ -29,10 +29,7 @@ module SlackSocketModeBot
     private
 
     def slack_web_client
-      client = Slack::Web::Client.new(
-        token: @bot_token,
-        logger: @logger
-      )
+      client = Slack::Web::Client.new(token: @bot_token)
       auth_response = client.auth_test
 
       raise auth_response unless auth_response[:ok]
