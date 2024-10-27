@@ -34,6 +34,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "async"
+  spec.add_dependency "async-http"
   spec.add_dependency "async-websocket"
   spec.add_dependency "slack-ruby-client"
 end

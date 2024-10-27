@@ -1,8 +1,9 @@
 PATH
   remote: .
   specs:
-    slack-ruby-socket-mode-bot (0.1.0)
+    slack-ruby-socket-mode-bot (0.2.0)
       async
+      async-http
       async-websocket
       slack-ruby-client
 
