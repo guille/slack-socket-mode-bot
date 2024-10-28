@@ -22,9 +22,11 @@ module SlackSocketModeBot
 
         raise response unless response[:ok]
 
-        response[:url]
-        # debug only:
-        "#{response[:url]}&debug_reconnects=true"
+        if ENV.fetch("ENVIRONMENT", "production").casecmp?("development")
+          "#{response[:url]}&debug_reconnects=true"
+        else
+          response[:url]
+        end
       end
 
       def callback(*args)
